@@ -8,7 +8,7 @@
     <link href="/2024/10/29/hexo%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/"/>
     <url>/2024/10/29/hexo%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/</url>
     
-    <content type="html"><![CDATA[<p>本篇指南旨在针对hexo博客做一个简要的使用手册说明。</p><h3 id="先浅浅地测试一下图片能正常显示（文章的对应图片放置在对应同名文件夹内）"><a href="#先浅浅地测试一下图片能正常显示（文章的对应图片放置在对应同名文件夹内）" class="headerlink" title="先浅浅地测试一下图片能正常显示（文章的对应图片放置在对应同名文件夹内）"></a>先浅浅地测试一下图片能正常显示（文章的对应图片放置在对应同名文件夹内）</h3><p>将图片放在文章对应的同名文件夹中<br><img src="/2024/10/29/hexo%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/blue.png" alt="blue"></p>]]></content>
+    <content type="html"><![CDATA[<p>本篇指南旨在针对hexo博客做一个简要的使用手册说明。</p><h3 id="先浅浅地测试一下图片能正常显示"><a href="#先浅浅地测试一下图片能正常显示" class="headerlink" title="先浅浅地测试一下图片能正常显示"></a>先浅浅地测试一下图片能正常显示</h3><p>图片放置免费的图床上，图床链接如下</p><p>图床链接: <a href="https://imgse.com/better_meghi">https://imgse.com/better_meghi</a></p><p><a href="https://imgse.com/i/pAr8Isg"><img src="https://s21.ax1x.com/2024/11/03/pAr8Isg.png" alt="pAr8Isg.png"></a></p>]]></content>
     
     
     <categories>
