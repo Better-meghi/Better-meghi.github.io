@@ -1,0 +1,1354 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="chimaodeyu">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="Markdown语法讲解一小时快速上手，程序员必备的Markdown语法，轻松编写规范文档。 什么是Markdown？Markdown 致力于使阅读和创作文档变得容易。 Markdown是一种轻量级的标记语言，设计初衷是让人们可以使用简单的文本格式来书写和编辑文档，同时具有一定的格式化效果。通过使用Markdown语法，用户可以快速地将纯文本转换为格式化的文档，例如标题、列表、链接、图片等。Ma">
+<meta property="og:type" content="article">
+<meta property="og:title" content="markdown基本语法">
+<meta property="og:url" content="https://better-meghi.github.io/2026/03/21/markdown%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/index.html">
+<meta property="og:site_name" content="Blog">
+<meta property="og:description" content="Markdown语法讲解一小时快速上手，程序员必备的Markdown语法，轻松编写规范文档。 什么是Markdown？Markdown 致力于使阅读和创作文档变得容易。 Markdown是一种轻量级的标记语言，设计初衷是让人们可以使用简单的文本格式来书写和编辑文档，同时具有一定的格式化效果。通过使用Markdown语法，用户可以快速地将纯文本转换为格式化的文档，例如标题、列表、链接、图片等。Ma">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://s2.loli.net/2024/04/01/eawjZrQHVLdBt2b.png">
+<meta property="og:image" content="https://s2.loli.net/2024/04/01/vdfIcRaSolpG1Eq.png">
+<meta property="og:image" content="https://s2.loli.net/2024/04/01/HVqab9QUm4vw73P.png">
+<meta property="og:image" content="https://s2.loli.net/2024/04/01/wXgjtiEZNTsey4x.png">
+<meta property="og:image" content="https://s2.loli.net/2024/04/01/zNiBtrjcv8YCafw.png">
+<meta property="og:image" content="https://s2.loli.net/2024/04/01/gX9J8bqWmpEBDtQ.png">
+<meta property="og:image" content="https://s2.loli.net/2024/04/01/XN7jxEbVy1f9Qdc.png">
+<meta property="og:image" content="https://s2.loli.net/2024/04/01/zfgb68jVUFLB3CD.png">
+<meta property="og:image" content="https://s2.loli.net/2024/04/01/QVpmIbt7ZSYK1Cx.png">
+<meta property="og:image" content="https://s2.loli.net/2024/04/01/CyUe3ONaGIrHPJ1.png">
+<meta property="og:image" content="https://s2.loli.net/2024/04/01/EqgWruOl16iK3Fp.png">
+<meta property="og:image" content="https://s2.loli.net/2024/04/01/yzrt4mBOkAeiLXY.png">
+<meta property="og:image" content="https://s2.loli.net/2024/04/01/3RLqvTUMcdHJ9Dw.png">
+<meta property="og:image" content="https://s2.loli.net/2024/04/01/8KREHPN6uJrYl1I.png">
+<meta property="og:image" content="https://s2.loli.net/2024/04/01/y8EMtnl6OoTKisf.png">
+<meta property="og:image" content="https://s2.loli.net/2024/04/01/R5rAUhNbplvKwVY.png">
+<meta property="og:image" content="https://s2.loli.net/2024/04/02/lTaXhsW9FJtNnCu.png">
+<meta property="og:image" content="https://s2.loli.net/2024/04/01/nQWCug3v2l7KT8D.png">
+<meta property="og:image" content="https://s2.loli.net/2024/04/01/mcUEvVisSJhY1Fd.png">
+<meta property="og:image" content="https://s2.loli.net/2024/04/01/oxRchdnvT2fLeGK.png">
+<meta property="og:image" content="https://s2.loli.net/2024/04/01/DEZBrV2pks8NfdO.png">
+<meta property="og:image" content="https://s2.loli.net/2024/04/01/9DLQ4wJBRrkx2Mz.png">
+<meta property="og:image" content="https://s2.loli.net/2024/04/01/DI6wWdz4YpK28rH.png">
+<meta property="og:image" content="https://s2.loli.net/2024/04/01/LKjlRtNzB5isDuG.png">
+<meta property="og:image" content="https://s2.loli.net/2024/04/01/k68Ge3oDayrvIYV.png">
+<meta property="og:image" content="https://s2.loli.net/2024/04/01/7QNUrl2iWS8bntV.png">
+<meta property="og:image" content="https://s2.loli.net/2024/04/01/mpeSxcr9J2bql3T.png">
+<meta property="og:image" content="https://s2.loli.net/2024/04/01/R49wHZ65srE7tXG.png">
+<meta property="og:image" content="https://s2.loli.net/2024/04/01/nyTq71e5ZVbsEra.png">
+<meta property="og:image" content="https://s2.loli.net/2024/04/01/peyt9kK8GOmYfVH.png">
+<meta property="og:image" content="https://s2.loli.net/2024/04/01/UbCHiYNrZ6S9M7k.png">
+<meta property="og:image" content="https://s2.loli.net/2024/04/01/5gp3a9nt742lcQH.png">
+<meta property="og:image" content="https://s2.loli.net/2024/04/01/tsZTdbPSFURHBjY.png">
+<meta property="og:image" content="https://s2.loli.net/2024/04/01/z2fx6Cp9ylJQX3k.png">
+<meta property="og:image" content="https://s2.loli.net/2024/04/02/Nnzb1uhIaWVtpve.png">
+<meta property="og:image" content="https://s2.loli.net/2024/04/01/JErUCm2D7MHfXB8.png">
+<meta property="og:image" content="https://s2.loli.net/2024/04/01/mYWEjiLsko6aTdX.png">
+<meta property="og:image" content="https://s2.loli.net/2024/04/01/xJhzHZOkVBCprLc.png">
+<meta property="og:image" content="https://s2.loli.net/2024/04/01/LTDxq3ZOMFWecPl.png">
+<meta property="og:image" content="https://s2.loli.net/2024/04/01/Ra8bZtxIsglzvyq.png">
+<meta property="og:image" content="https://s2.loli.net/2024/04/01/iUBdSyfH62zEvOl.png">
+<meta property="og:image" content="https://s2.loli.net/2024/04/02/v2QRTP5ScIhGdEz.png">
+<meta property="og:image" content="https://s2.loli.net/2024/04/02/NCru8B5pVOMlEU4.png">
+<meta property="og:image" content="https://s2.loli.net/2024/04/02/mgJkQIcsolPXUan.png">
+<meta property="og:image" content="https://s2.loli.net/2024/04/02/hckaJRz2YmNGt4W.png">
+<meta property="og:image" content="https://s2.loli.net/2024/04/02/sxD42gbwlKqZzCL.png">
+<meta property="og:image" content="https://s2.loli.net/2024/04/02/ctIV1ALQod6gzH7.png">
+<meta property="og:image" content="https://s2.loli.net/2024/04/02/tKwNgFZ2exSqUbp.png">
+<meta property="og:image" content="https://s2.loli.net/2024/04/02/cfIjWGndLUrh517.png">
+<meta property="og:image" content="https://s2.loli.net/2024/04/02/ZnJU2rwqSoPbGYf.png">
+<meta property="og:image" content="https://s2.loli.net/2024/04/02/RBW6LmgEPhscyaJ.png">
+<meta property="article:published_time" content="2026-03-21T13:11:56.000Z">
+<meta property="article:modified_time" content="2026-03-21T13:14:09.472Z">
+<meta property="article:author" content="chimaodeyu">
+<meta property="article:tag" content="操作文档">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://s2.loli.net/2024/04/01/eawjZrQHVLdBt2b.png">
+  
+  
+  
+  <title>markdown基本语法 - Blog</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1749284_5i9bdhy70f8.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"better-meghi.github.io","root":"/","version":"1.9.9","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"expand_all":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"openkounter":{"server_url":"https://open-kounter.mintimate.cn","path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 8.1.1"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Blog</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content (desktop) -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile grid menu overlay -->
+<div id="mobile-grid-menu" class="d-lg-none">
+  <div class="mobile-grid-menu-inner">
+    <div class="container">
+      <div class="row">
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-home-fill"></i>
+                  <span>首页</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/archives/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-archive-fill"></i>
+                  <span>归档</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/categories/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-category-fill"></i>
+                  <span>分类</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/tags/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-tags-fill"></i>
+                  <span>标签</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/about/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-user-fill"></i>
+                  <span>关于</span>
+                </div>
+              </a>
+            </div>
+          
+        
+        
+          <div class="col-4 mobile-grid-cell" id="mobile-search-btn">
+            <a href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <div class="mobile-grid-item">
+                <i class="iconfont icon-search"></i>
+                <span>搜索</span>
+              </div>
+            </a>
+          </div>
+        
+        
+          <div class="col-4 mobile-grid-cell" id="mobile-color-toggle-btn"
+               data-label-light="开灯"
+               data-label-dark="关灯">
+            <a href="javascript:;" aria-label="Color Toggle">
+              <div class="mobile-grid-item">
+                <i class="iconfont icon-dark" id="mobile-color-toggle-icon"></i>
+                <span id="mobile-color-toggle-label">关灯</span>
+              </div>
+            </a>
+          </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/boy.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="markdown基本语法"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2026-03-21 21:11" pubdate>
+          2026年3月21日 晚上
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          6.2k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          52 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">markdown基本语法</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <p><img src="https://s2.loli.net/2024/04/01/eawjZrQHVLdBt2b.png" srcset="/img/loading.gif" lazyload alt="image-20240401213036040"></p>
+<h1 id="Markdown语法讲解"><a href="#Markdown语法讲解" class="headerlink" title="Markdown语法讲解"></a>Markdown语法讲解</h1><p>一小时快速上手，程序员必备的Markdown语法，轻松编写规范文档。</p>
+<h2 id="什么是Markdown？"><a href="#什么是Markdown？" class="headerlink" title="什么是Markdown？"></a>什么是Markdown？</h2><p><strong>Markdown 致力于使阅读和创作文档变得容易。</strong></p>
+<p>Markdown是一种轻量级的标记语言，设计初衷是让人们可以使用简单的文本格式来书写和编辑文档，同时具有一定的格式化效果。通过使用Markdown语法，用户可以快速地将纯文本转换为格式化的文档，例如标题、列表、链接、图片等。Markdown语法简单直观，易于学习和使用，逐渐成为了各种平台上书写文档的常用格式，甚至还可以实现Markdown文档对PDF、Word等格式的快速转换。</p>
+<p>Markdown的文件通常以<code>.md</code>或<code>.markdown</code>为扩展名</p>
+<p><img src="https://s2.loli.net/2024/04/01/vdfIcRaSolpG1Eq.png" srcset="/img/loading.gif" lazyload alt="image-20240401212138341"></p>
+<p>我们可以创建一个TXT文本文档，然后将其后缀改为<code>.md</code>即可开始编辑此Markdown文档。</p>
+<h3 id="段落和换行"><a href="#段落和换行" class="headerlink" title="段落和换行"></a>段落和换行</h3><p>Markdown文档与我们常见的Word文档或是TXT文档类似，只需要直接输入内容，就可以展示了：</p>
+<p><img src="https://s2.loli.net/2024/04/01/HVqab9QUm4vw73P.png" srcset="/img/loading.gif" lazyload alt="image-20240401212755550"></p>
+<p>当我们需要换行时，在源代码中直接换行相当于空一格，并不是真正的换行：</p>
+<p><img src="https://s2.loli.net/2024/04/01/wXgjtiEZNTsey4x.png" srcset="/img/loading.gif" lazyload alt="image-20240401213219346"></p>
+<p>要实现换行有两种方式：</p>
+<ul>
+<li><strong>换行效果：</strong> 在上一行的末尾连续添加两个空格，然后再换行。</li>
+<li><strong>换段效果：</strong> 连续换两行。</li>
+</ul>
+<p><img src="https://s2.loli.net/2024/04/01/zNiBtrjcv8YCafw.png" srcset="/img/loading.gif" lazyload alt="image-20240401213420818"></p>
+<h3 id="加粗和斜体"><a href="#加粗和斜体" class="headerlink" title="加粗和斜体"></a>加粗和斜体</h3><p>想要使得文本加粗，我们只需要在需要加粗文本两边添加两个<code>*</code>星号即可：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs markdown">这是一段文本，而<span class="hljs-strong">**我是需要加粗的内容**</span>请帮我加一下粗<br></code></pre></td></tr></table></figure>
+
+<p>或是使用两个<code>_</code>下划线，效果相同：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs markdown">这是一段文本，而<span class="hljs-strong">__我是需要加粗的内容__</span>请帮我加一下粗<br></code></pre></td></tr></table></figure>
+
+<p><strong>注意：</strong> 这里比较推荐使用<code>*</code>号，因为部分编辑器在使用<code>_</code>下划线时无法实现加粗效果。</p>
+<p>斜体与加粗类似，我们只需在需要斜体的文本两边添加一个<code>*</code>星号即可：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs markdown">这是一段文本，而<span class="hljs-emphasis">*我是需要斜体的内容*</span>请帮我搞一下<br></code></pre></td></tr></table></figure>
+
+<p>同样也可以使用一个<code>_</code>下划线代替，效果相同：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs markdown">这是一段文本，而<span class="hljs-emphasis">_我是需要斜体的内容_</span>请帮我搞一下<br></code></pre></td></tr></table></figure>
+
+<p>如果需要同时使用加粗和斜体，我们可以直接使用连续的三个<code>*</code>星号或是<code>_</code>下划线：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs markdown">而你，我的朋友，你才是<span class="hljs-strong">**<span class="hljs-emphasis">*真正的英雄*</span>**</span><br></code></pre></td></tr></table></figure>
+
+<p>如果我们只是单纯想在文档中使用这些特殊符号（包括后面遇到的）我们可以使用转义字符，否则某些编辑器会出现格式错乱等问题，只需在前面加上<code>\</code>反斜杠即可：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs markdown">我是转义的 \* 符号，可以直接展示<br></code></pre></td></tr></table></figure>
+
+<h3 id="删除线和下划线"><a href="#删除线和下划线" class="headerlink" title="删除线和下划线"></a>删除线和下划线</h3><p>想要为文本添加删除线，我们只需要在需要加删除线的文本两边添加两个<code>~</code>波浪线即可：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs markdown">这是一段普通的文本，~~而我是需要删除的内容~~<br></code></pre></td></tr></table></figure>
+
+<p>下划线在Markdown原生语法中没有提供对应的符号，我们只能借助HTML代码来实现，Markdown支持在文本中嵌入HTML标签，包括其样式，我们会在后面详细介绍：</p>
+<p><img src="https://s2.loli.net/2024/04/01/gX9J8bqWmpEBDtQ.png" srcset="/img/loading.gif" lazyload alt="image-20240401214710763"></p>
+<h3 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h3><p>分割线的创建非常简单，只需在单独一行使用连续三个及以上的<code>*</code>星号即可：</p>
+<p><img src="https://s2.loli.net/2024/04/01/XN7jxEbVy1f9Qdc.png" srcset="/img/loading.gif" lazyload alt="image-20240401214833735"></p>
+<p>同样的，我们使用下划线也可以实现：</p>
+<p><img src="https://s2.loli.net/2024/04/01/zfgb68jVUFLB3CD.png" srcset="/img/loading.gif" lazyload alt="image-20240401214917822"></p>
+<p>在连续三个字符之间也可以存在空格：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs markdown">_ _ _  连续三个带空格分隔的下划线<br><span class="hljs-bullet">*</span> * *  连续三个带空格分隔的星号<br><span class="hljs-bullet">-</span> - -  连续三个带空格分隔的减号<br></code></pre></td></tr></table></figure>
+
+<p>效果与上面一样，都可以实现分割线效果。</p>
+<h3 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h3><p>很多情况下我们都需要一个标题来代表当前这块文本的内容核心，以便读者阅读，Markdown中也可以创建多种大小的标题，就像Word文档那样，并且非常简单，我们只需要使用<code>#</code>井号即可创建标题：</p>
+<p><img src="https://s2.loli.net/2024/04/01/QVpmIbt7ZSYK1Cx.png" srcset="/img/loading.gif" lazyload alt="image-20240401215549080"></p>
+<p>标题分为多种等级，不同的等级表示不同级别下的标题，我们可以通过连续添加多个<code>#</code>井号来表示多个不同等级的标题，但是最多只支持到六级标题：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs markdown"><span class="hljs-section"># 我是一级标题</span><br><span class="hljs-section">## 我是二级标题</span><br><span class="hljs-section">### 我是三级标题</span><br><span class="hljs-section">#### 我是四级标题</span><br><span class="hljs-section">##### 我是五级标题</span><br><span class="hljs-section">###### 我是六级标题（最多六级）</span><br></code></pre></td></tr></table></figure>
+
+<p><img src="https://s2.loli.net/2024/04/01/CyUe3ONaGIrHPJ1.png" srcset="/img/loading.gif" lazyload alt="image-20240401215903143"></p>
+<p>除了使用<code>#</code>井号创建之外，一级标题和二级标题也可以使用其他符号快速创建，一级标题可以使用<code>=</code>等号快速创建，只需要在标题文本的下方添加即可：</p>
+<p><img src="https://s2.loli.net/2024/04/01/EqgWruOl16iK3Fp.png" srcset="/img/loading.gif" lazyload alt="image-20240401220133956"></p>
+<p>同样的，二级标题可以使用<code>-</code>减号快速创建，也是在下方添加：</p>
+<p><img src="https://s2.loli.net/2024/04/01/yzrt4mBOkAeiLXY.png" srcset="/img/loading.gif" lazyload alt="image-20240401220416350"></p>
+<h3 id="列表和勾选框"><a href="#列表和勾选框" class="headerlink" title="列表和勾选框"></a>列表和勾选框</h3><p>列表在我们的日常生活中起到了非常重要的作用，比如我们的日常计划、工作任务、购物清单等，都需要用到列表来展示，这样往往更加清晰直观，在Markdown中也可以很轻松地创建列表。</p>
+<p>要创建一个无序列表，我们只需要使用<code>*</code>星号作为前缀，注意需要空格：</p>
+<p><img src="https://s2.loli.net/2024/04/01/3RLqvTUMcdHJ9Dw.png" srcset="/img/loading.gif" lazyload alt="image-20240401221114169"></p>
+<p>除了星号之外，我们也可以使用加号 <code>+</code> 或是减号 <code>-</code>来代替，效果完全相同。注意，这三种符号在一个列表中只能统一使用同一种，不能混用，如果出现混用的情况，会被认为是上一个列表下的一个新的列表，比如下面就被认为是三个列表了：</p>
+<p><img src="https://s2.loli.net/2024/04/01/8KREHPN6uJrYl1I.png" srcset="/img/loading.gif" lazyload alt="image-20240401221227768"></p>
+<p>要创建一个带数字的有序列表，我们可以使用数字的123来表示，首先输入数字然后添加<code>.</code>小数点作为前缀，注意添加空格：</p>
+<p><img src="https://s2.loli.net/2024/04/01/y8EMtnl6OoTKisf.png" srcset="/img/loading.gif" lazyload alt="image-20240401221807396"></p>
+<p>在列表中换行同样需要像普通文本那样，如果只是单纯换行编写，会被认为是一个空格：</p>
+<p><img src="https://s2.loli.net/2024/04/01/R5rAUhNbplvKwVY.png" srcset="/img/loading.gif" lazyload alt="image-20240401225122783"></p>
+<p>如果是在末尾添加两个空格再换行，会被认为是在列表项内换行：</p>
+<p><img src="https://s2.loli.net/2024/04/02/lTaXhsW9FJtNnCu.png" srcset="/img/loading.gif" lazyload alt="image-20240401225203168"></p>
+<p>只有两个连续的换行才能脱离列表，作为新的段落开始编写：</p>
+<p><img src="https://s2.loli.net/2024/04/01/nQWCug3v2l7KT8D.png" srcset="/img/loading.gif" lazyload alt="image-20240401225233609"></p>
+<p>列表支持多个层级嵌套，我们可以在一级列表下创建二级列表，要表示二级列表，我们可以在前面添加两个或四个空格（也可以是一个TAB缩进），表示此列表是上一个列表的子级：</p>
+<p><img src="https://s2.loli.net/2024/04/01/mcUEvVisSJhY1Fd.png" srcset="/img/loading.gif" lazyload alt="image-20240401222110941"></p>
+<p>我们也可以将列表变为勾选框的形式，来表示我们的任务完成情况，只需要添加一个方括号即可：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs markdown"><span class="hljs-bullet">*</span> [ ] 我是未完成的任务<br><span class="hljs-bullet">*</span> [x] 我是已完成的任务<br></code></pre></td></tr></table></figure>
+
+<p><img src="https://s2.loli.net/2024/04/01/oxRchdnvT2fLeGK.png" srcset="/img/loading.gif" lazyload alt="image-20240401222649780"></p>
+<p>在方括号中间填写空格表示未完成，填写大写或小写的<code>x</code>表示已完成。</p>
+<h3 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h3><p>要创建一个代码块，只需要在本行的最前面添加四个空格即可，注意代码块要与上面的其他文本隔开一行：</p>
+<p><img src="https://s2.loli.net/2024/04/01/DEZBrV2pks8NfdO.png" srcset="/img/loading.gif" lazyload alt="image-20240401223017312"></p>
+<p>只不过这样非常不方便，不仅要空出四格还得专门隔一行出来，建议各位小伙伴使用下面的方式创建代码块，更加简单，我们也可以使用三个连续的 ` 符号来添加代码块，注意前后都需要添加，囊括起来：</p>
+<p><img src="https://s2.loli.net/2024/04/01/9DLQ4wJBRrkx2Mz.png" srcset="/img/loading.gif" lazyload alt="image-20240401223927003"></p>
+<p>在上面的三个 ` 后可以添加语言名称，比如我们这里添加的是Java代码，那就添加java名称上去，表示这个代码块是一段Java代码，便于Markdown编辑器分辨代码并为其添加相应的高亮展示。</p>
+<p><strong>注意：</strong> 代码块中的所有内容都会被认为是代码，不可以嵌套其他Markdown语法。</p>
+<p>除了编写多行代码之外，如果只是加单编写一个行内展示的代码，比如方法名称之类的，我们可以使用单个 ` 囊括行内代码块部分：</p>
+<p><img src="https://s2.loli.net/2024/04/01/DI6wWdz4YpK28rH.png" srcset="/img/loading.gif" lazyload alt="image-20240401224507210"></p>
+<h3 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h3><p>当我们引用他人文章内容时，往往需要特别标注此部分，而Markdown为我们提供了更加方便的文本引用块，我们只需要在最前面添加<code>&gt;</code>大于符号即可表示后面的文本为引用文本，注意空格：</p>
+<p><img src="https://s2.loli.net/2024/04/01/LKjlRtNzB5isDuG.png" srcset="/img/loading.gif" lazyload alt="image-20240401224807492"></p>
+<p>被引用的文本会被一个特殊的块包裹起来，类似于代码块，反正意思到位就行了。</p>
+<p>在引用块内换行同样需要像普通文本那样，如果只是单纯换行编写，会被认为是一个空格：</p>
+<p><img src="https://s2.loli.net/2024/04/01/k68Ge3oDayrvIYV.png" srcset="/img/loading.gif" lazyload alt="image-20240401225417581"></p>
+<p>如果是在末尾添加两个空格再换行，会被认为是在引用块内换行：</p>
+<p><img src="https://s2.loli.net/2024/04/01/7QNUrl2iWS8bntV.png" srcset="/img/loading.gif" lazyload alt="image-20240401225435435"></p>
+<p>只有两个连续的换行才能脱离引用块，作为新的段落开始编写：</p>
+<p><img src="https://s2.loli.net/2024/04/01/mpeSxcr9J2bql3T.png" srcset="/img/loading.gif" lazyload alt="image-20240401225506218"></p>
+<p>对于多行内容的引用，我们更推荐每一行的前面都添加<code>&gt;</code>大于符号，效果与上面是完全一样的，并且看上去会更加直观：</p>
+<p><img src="https://s2.loli.net/2024/04/01/R49wHZ65srE7tXG.png" srcset="/img/loading.gif" lazyload alt="image-20240401225637460"></p>
+<p>在引用块内，我们也可以嵌套其他Markdown内容，比如列表或是代码块：</p>
+<p><img src="https://s2.loli.net/2024/04/01/nyTq71e5ZVbsEra.png" srcset="/img/loading.gif" lazyload alt="image-20240401230153697"></p>
+<p>引用还能继续嵌套引用，甚至很多层，只需要连续添加<code>&lt;</code>大于符号前缀即可，注意空格：</p>
+<p><img src="https://s2.loli.net/2024/04/01/peyt9kK8GOmYfVH.png" srcset="/img/loading.gif" lazyload alt="image-20240401230415872"></p>
+<h3 id="链接和图片"><a href="#链接和图片" class="headerlink" title="链接和图片"></a>链接和图片</h3><p>我们可以像Word中那样，在Markdown文档中插入超链接，只需要使用<code>[]</code>和<code>()</code>组合就能完成，具体语法格式为：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs markdown">[<span class="hljs-string">链接文本</span>](<span class="hljs-link">链接地址</span>)<br></code></pre></td></tr></table></figure>
+
+<p>我们可以像下面这样编写：</p>
+<p><img src="https://s2.loli.net/2024/04/01/UbCHiYNrZ6S9M7k.png" srcset="/img/loading.gif" lazyload alt="image-20240401230757990"></p>
+<p>这样，指定的文本会以超链接的形式存在于文档中，用户可以直接点击跳转，非常方便。</p>
+<p>有些时候可能我们的文档中有很多链接，甚至还有重复，此时一个一个编写相当费时间，而且源代码中满屏的链接显得相当杂乱，我们可以利用变量来优化这种情况，变量可以在文章的末尾再确定值：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs markdown">[<span class="hljs-string">链接文本</span>][<span class="hljs-symbol">变量</span>]<br><br>[<span class="hljs-symbol">变量</span>]: <span class="hljs-link">https://www.baidu.com</span><br></code></pre></td></tr></table></figure>
+
+<p>等价于：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs markdown">[<span class="hljs-string">链接文本</span>](<span class="hljs-link">https://www.baidu.com</span>)<br></code></pre></td></tr></table></figure>
+
+<p><img src="https://s2.loli.net/2024/04/01/5gp3a9nt742lcQH.png" srcset="/img/loading.gif" lazyload alt="image-20240401232319677"></p>
+<p>我们接着来看如何向文章中插入图片，其实插入图片非常简单，与链接类似，语法如下：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs markdown">![<span class="hljs-string">图片描述</span>](<span class="hljs-link">图片地址 &quot;图片名称，可选&quot;</span>)<br></code></pre></td></tr></table></figure>
+
+<p>其实就是链接的写法前面多加了一个感叹号。由于Markdown文档是纯文本格式，无法像Word那样真的放一张图片进去，因此我们只能使用本地图片地址或是网络图片地址，比如插入一张网络图片：</p>
+<p><img src="https://s2.loli.net/2024/04/01/tsZTdbPSFURHBjY.png" srcset="/img/loading.gif" lazyload alt="image-20240401232727380"></p>
+<p>这里推荐各位小伙伴使用网络图片，尤其是需要分享文档给其他小伙伴或是在不同电脑上办公的，本地图片必须一起打包带走，非常麻烦，而网络图片无论何时何地都可以访问，直接一步到位，当前，前提是选好一个合适的图床。</p>
+<p>图片插入后，大小由编辑器决定，一般是占满宽度，我们无法主动修改图片的大小。</p>
+<p>图片和链接一样，都可以使用变量：</p>
+<p><img src="https://s2.loli.net/2024/04/01/z2fx6Cp9ylJQX3k.png" srcset="/img/loading.gif" lazyload alt="image-20240401233027490"></p>
+<h3 id="脚注"><a href="#脚注" class="headerlink" title="脚注"></a>脚注</h3><p>在Word中我们经常会用到脚注，尤其是论文中，经常会在某个词语的右上角标上123来表示这个词语在文档的底部有注释，如果不理解可以去页脚查看注释中的内容。</p>
+<p>在Markdown中也可以像这样编写脚注（部分编辑器不支持）</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs markdown">姐，遇到PHP[^1]程序员就嫁了吧。<br>[<span class="hljs-symbol">^1</span>]:<span class="hljs-link">世界上最好的语言。</span><br></code></pre></td></tr></table></figure>
+
+<p><img src="https://s2.loli.net/2024/04/02/Nnzb1uhIaWVtpve.png" srcset="/img/loading.gif" lazyload alt="image-20240402000054253"></p>
+<p>鼠标移动上去时也会展示脚注内容。</p>
+<h3 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h3><p>在Markdown中也支持创建一个表格，使得数据的展示更加整齐有序。</p>
+<p>不过这个语法可能稍微有一点点复杂，首先我们来看一个表格的结构，表格分为表头和表体，其中表头就是最顶上一排的，用于表示当前列的数据类型，比如年龄、性别等，而表体就是每一行数据，我们来看看如何在Markdown中编写：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs markdown">| 名称 | 年龄 | 性别 |<br>| --- | --- | --- |<br></code></pre></td></tr></table></figure>
+
+<p>最上一排就是表头，需要在左右使用<code>|</code>表示这是一个表格，同时，下方需要添加分割线，分割线使用<code>-</code>减号表示，写一个或多个都可以，推荐与表的宽度一致，更加美观。这样，就可以顺利展示为一个表格了：</p>
+<p><img src="https://s2.loli.net/2024/04/01/JErUCm2D7MHfXB8.png" srcset="/img/loading.gif" lazyload alt="image-20240401233838765"></p>
+<p>接着我们来编写表体，格式与表头是一样的，并且可以一直往下写：</p>
+<p><img src="https://s2.loli.net/2024/04/01/mYWEjiLsko6aTdX.png" srcset="/img/loading.gif" lazyload alt="image-20240401234008669"></p>
+<p>同时Markdown的表格支持内容的对齐调整，只需要使用<code>:</code>冒号调整分割线即可：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs markdown">| 名称 | 年龄 | 性别 |<br>| :--- | :---: | ---: |<br></code></pre></td></tr></table></figure>
+
+<p>其中：</p>
+<ul>
+<li><code>:---</code> 为左对齐</li>
+<li><code>---:</code> 为右对齐</li>
+<li><code>:---:</code> 为居中对齐</li>
+</ul>
+<p>比如我们希望内容居右对齐：</p>
+<p><img src="https://s2.loli.net/2024/04/01/xJhzHZOkVBCprLc.png" srcset="/img/loading.gif" lazyload alt="image-20240401234423105"></p>
+<p>表格中也可以嵌套使用诸如加粗、斜体、行内代码块这类Markdown语法。</p>
+<h3 id="HTML标签"><a href="#HTML标签" class="headerlink" title="HTML标签"></a>HTML标签</h3><p>学完最基本的语法后，可能会有小伙伴觉得自定义度不够，比如无法修改字体颜色、无法自定义图片的大小等。我们也可以在Markdown文本中使用部分受支持的HTML标签，让文档内容更加个性化。</p>
+<p>比如我们可以嵌入一个<code>img</code>标签，并编写对应的css行内样式，来让图片大小可以自定义：</p>
+<p><img src="https://s2.loli.net/2024/04/01/LTDxq3ZOMFWecPl.png" srcset="/img/loading.gif" lazyload alt="image-20240401234911264"></p>
+<p>还有我们前面使用的换行、分割线、下划线等，都可以使用HTML提供的标签来完成：</p>
+<p><img src="https://s2.loli.net/2024/04/01/Ra8bZtxIsglzvyq.png" srcset="/img/loading.gif" lazyload alt="image-20240401235017487"></p>
+<p>只不过，如果Markdown语法本身就支持对应的功能，我们还是尽量使用Markdown原生的语法，以免降低可读性。</p>
+<p>我们还可以利用css修改文本的颜色等，自定义度相当高：</p>
+<p><img src="https://s2.loli.net/2024/04/01/iUBdSyfH62zEvOl.png" srcset="/img/loading.gif" lazyload alt="image-20240401235152308"></p>
+<p>各位小伙伴还可以试试看内嵌<code>iframe</code>页面，实现B站视频播放哦~</p>
+<h3 id="其他扩展语法"><a href="#其他扩展语法" class="headerlink" title="其他扩展语法"></a>其他扩展语法</h3><p>除了我们上面学习的语法外，还有一些扩展语法可以使用（部分编辑器不支持，Typora需要在设置中开启才能支持）</p>
+<p>首先是文本高亮，使用两个<code>=</code>等号囊括：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs markdown">==我是高亮部分==<br></code></pre></td></tr></table></figure>
+
+<p>此时文字会呈现为高亮状态，具体怎么高亮根据不同的编辑器可能效果会不一样。</p>
+<p>文本的上标和下标分别可以使用单个<code>^</code>和<code>~</code>囊括来实现：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs markdown">我是文本^我是上标^<br><br>我是文本~我是下标~<br></code></pre></td></tr></table></figure>
+
+<h2 id="数学公式语法"><a href="#数学公式语法" class="headerlink" title="数学公式语法"></a>数学公式语法</h2><p>除了基础的文档格式Markdown可以支持外，它还可以编写数学公式，更加直观和规范地展示，理科生直接爱了。</p>
+<p><strong>注意：</strong> 使用Typora的小伙伴需要在设置中开启内联公式支持。</p>
+<h3 id="公式块"><a href="#公式块" class="headerlink" title="公式块"></a>公式块</h3><p>需要编写数学公式，我们同样需要在特定的块中编写，公式块使用<code>$</code>美元符表示。多行公式使用连续的两个美元符：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs markdown">$$<br>我是公式<br>$$<br></code></pre></td></tr></table></figure>
+
+<p>如果只想在行内编写，一行内容只需要使用一个美元符囊括即可：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs markdown">公式为：$ x = 17 + y $ 牛逼吧<br></code></pre></td></tr></table></figure>
+
+<p>公式块中展示的内容会自动变为标准的论文公式格式，并且字体也是非常标准的，强烈推荐各位小伙伴使用Markdown写数学公式。</p>
+<h3 id="特殊数学符号"><a href="#特殊数学符号" class="headerlink" title="特殊数学符号"></a>特殊数学符号</h3><p>在公式块中，大部分数学符号都可以通过键盘直接输入，但是还是有一些符号无法直接通过键盘输入，比如乘号、除号、根号等，我们需要借助一些特殊的代码来替代：</p>
+<table>
+<thead>
+<tr>
+<th align="center">代码</th>
+<th align="center">符号</th>
+<th align="center">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">\not&#x3D;</td>
+<td align="center">$\not&#x3D;$</td>
+<td align="center">不等于</td>
+</tr>
+<tr>
+<td align="center">\approx</td>
+<td align="center">$\approx$</td>
+<td align="center">约等于</td>
+</tr>
+<tr>
+<td align="center">\times</td>
+<td align="center">$\times$</td>
+<td align="center">乘号</td>
+</tr>
+<tr>
+<td align="center">\div</td>
+<td align="center">$\div$</td>
+<td align="center">除号</td>
+</tr>
+<tr>
+<td align="center">\leq</td>
+<td align="center">$\leq$</td>
+<td align="center">小于等于</td>
+</tr>
+<tr>
+<td align="center">\geq</td>
+<td align="center">$\geq$</td>
+<td align="center">大于等于</td>
+</tr>
+<tr>
+<td align="center">\pm</td>
+<td align="center">$\pm$</td>
+<td align="center">正负号</td>
+</tr>
+<tr>
+<td align="center">\sum</td>
+<td align="center">$\sum$</td>
+<td align="center">求和符号（累加）</td>
+</tr>
+<tr>
+<td align="center">\prod</td>
+<td align="center">$\prod$</td>
+<td align="center">累乘</td>
+</tr>
+<tr>
+<td align="center">\coprod</td>
+<td align="center">$\coprod$</td>
+<td align="center">累除</td>
+</tr>
+<tr>
+<td align="center">\overline{a + b + c}</td>
+<td align="center">$\overline{a + b + c}$</td>
+<td align="center">平均值</td>
+</tr>
+</tbody></table>
+<p>数学中常见特殊字符：</p>
+<table>
+<thead>
+<tr>
+<th align="center">代码</th>
+<th align="center">符号</th>
+<th align="center">代码</th>
+<th align="center">符号</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">\alpha</td>
+<td align="center">$\alpha$</td>
+<td align="center">\beta</td>
+<td align="center">$\beta$</td>
+</tr>
+<tr>
+<td align="center">\gamma</td>
+<td align="center">$\gamma$</td>
+<td align="center">\delta</td>
+<td align="center">$\delta$</td>
+</tr>
+<tr>
+<td align="center">\epsilon</td>
+<td align="center">$\epsilon$</td>
+<td align="center">\eta</td>
+<td align="center">$\eta$</td>
+</tr>
+<tr>
+<td align="center">\theta</td>
+<td align="center">$\theta$</td>
+<td align="center">\pi</td>
+<td align="center">$\pi$</td>
+</tr>
+<tr>
+<td align="center">\omega</td>
+<td align="center">$\omega$</td>
+<td align="center">\rho</td>
+<td align="center">$\rho$</td>
+</tr>
+<tr>
+<td align="center">\sigma</td>
+<td align="center">$\sigma$</td>
+<td align="center">\mu</td>
+<td align="center">$\mu$</td>
+</tr>
+</tbody></table>
+<p>还有我们数学中常见的三角函数相关：</p>
+<table>
+<thead>
+<tr>
+<th align="center">代码</th>
+<th align="center">符号</th>
+<th align="center">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">\sin</td>
+<td align="center">$\sin$</td>
+<td align="center">正弦</td>
+</tr>
+<tr>
+<td align="center">\cos</td>
+<td align="center">$\cos$</td>
+<td align="center">余弦</td>
+</tr>
+<tr>
+<td align="center">\tan</td>
+<td align="center">$\tan$</td>
+<td align="center">正切</td>
+</tr>
+<tr>
+<td align="center">\cot</td>
+<td align="center">$\cot$</td>
+<td align="center">余切</td>
+</tr>
+<tr>
+<td align="center">\sec</td>
+<td align="center">$\sec$</td>
+<td align="center">正割</td>
+</tr>
+<tr>
+<td align="center">\csc</td>
+<td align="center">$\csc$</td>
+<td align="center">余割</td>
+</tr>
+<tr>
+<td align="center">\circ</td>
+<td align="center">$\circ$</td>
+<td align="center">度</td>
+</tr>
+</tbody></table>
+<p>积分和求导相关：</p>
+<table>
+<thead>
+<tr>
+<th align="center">代码</th>
+<th align="center">符号</th>
+<th align="center">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">\infty</td>
+<td align="center">$\infty$</td>
+<td align="center">无穷</td>
+</tr>
+<tr>
+<td align="center">\int</td>
+<td align="center">$\int$</td>
+<td align="center">定积分</td>
+</tr>
+<tr>
+<td align="center">\iint</td>
+<td align="center">$\iint$</td>
+<td align="center">双重积分</td>
+</tr>
+<tr>
+<td align="center">\iiint</td>
+<td align="center">$\iiint$</td>
+<td align="center">三重积分</td>
+</tr>
+<tr>
+<td align="center">\oint</td>
+<td align="center">$\oint$</td>
+<td align="center">曲线积分</td>
+</tr>
+<tr>
+<td align="center">x\prime</td>
+<td align="center">$x\prime$</td>
+<td align="center">求导</td>
+</tr>
+<tr>
+<td align="center">\lim</td>
+<td align="center">$\lim$</td>
+<td align="center">极限</td>
+</tr>
+</tbody></table>
+<p>集合相关：</p>
+<table>
+<thead>
+<tr>
+<th align="center">代码</th>
+<th align="center">符号</th>
+<th align="center">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">\emptyset</td>
+<td align="center">$\emptyset$</td>
+<td align="center">空集</td>
+</tr>
+<tr>
+<td align="center">\in</td>
+<td align="center">$\in$</td>
+<td align="center">属于</td>
+</tr>
+<tr>
+<td align="center">\notin</td>
+<td align="center">$\notin$</td>
+<td align="center">不属于</td>
+</tr>
+<tr>
+<td align="center">\supset</td>
+<td align="center">$\supset$</td>
+<td align="center">真包含</td>
+</tr>
+<tr>
+<td align="center">\supseteq</td>
+<td align="center">$\supseteq$</td>
+<td align="center">包含</td>
+</tr>
+<tr>
+<td align="center">\bigcap</td>
+<td align="center">$\bigcap$</td>
+<td align="center">交集</td>
+</tr>
+<tr>
+<td align="center">\bigcup</td>
+<td align="center">$\bigcup$</td>
+<td align="center">并集</td>
+</tr>
+</tbody></table>
+<p>对数函数相关：</p>
+<table>
+<thead>
+<tr>
+<th align="center">代码</th>
+<th align="center">符号</th>
+<th align="center">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">\log</td>
+<td align="center">$\log$</td>
+<td align="center">对数函数</td>
+</tr>
+<tr>
+<td align="center">\ln</td>
+<td align="center">$\ln$</td>
+<td align="center">以e为底的对数函数</td>
+</tr>
+<tr>
+<td align="center">\lg</td>
+<td align="center">$\lg$</td>
+<td align="center">以10为底的对数函数</td>
+</tr>
+</tbody></table>
+<h3 id="分数"><a href="#分数" class="headerlink" title="分数"></a>分数</h3><p>分数使用<code>\farc</code>来表示，具体格式如下：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs markdown">$ \frac&#123;分子&#125;&#123;分母&#125; $<br></code></pre></td></tr></table></figure>
+
+<p><img src="https://s2.loli.net/2024/04/02/v2QRTP5ScIhGdEz.png" srcset="/img/loading.gif" lazyload alt="image-20240402004527479"></p>
+<h3 id="开方"><a href="#开方" class="headerlink" title="开方"></a>开方</h3><p>开方使用<code>\sqrt</code>来表示，具体格式如下：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs markdown">$\sqrt&#123;4&#125;$<br></code></pre></td></tr></table></figure>
+
+<p><img src="https://s2.loli.net/2024/04/02/NCru8B5pVOMlEU4.png" srcset="/img/loading.gif" lazyload alt="image-20240402004631442"></p>
+<p>如果需要修改根号上方数值，可以添加中括号：</p>
+<figure class="highlight gams"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs gams"><span class="hljs-symbol">$</span>\<span class="hljs-built_in">sqrt</span>[<span class="hljs-number">3</span>]&#123;<span class="hljs-number">8</span>&#125;<span class="hljs-symbol">$</span><br></code></pre></td></tr></table></figure>
+
+<p><img src="https://s2.loli.net/2024/04/02/mgJkQIcsolPXUan.png" srcset="/img/loading.gif" lazyload alt="image-20240402004731104"></p>
+<h3 id="上下标"><a href="#上下标" class="headerlink" title="上下标"></a>上下标</h3><p>在公式块中的上下标与Markdown中的不同，语法也不一样，其中<code>^</code>表示上标， <code>_ </code>表示下标：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs markdown">$ x<span class="hljs-emphasis">_下标 $</span><br><span class="hljs-emphasis">$ x^上标 $</span><br><span class="hljs-emphasis">$ x^上标_</span>下标 $<br></code></pre></td></tr></table></figure>
+
+<p><img src="https://s2.loli.net/2024/04/02/hckaJRz2YmNGt4W.png" srcset="/img/loading.gif" lazyload alt="image-20240402004935329"></p>
+<p>如果上标或下标内容多于一个字符，需要使用 {} 括起来，包括后续的其他代码如果出现只有一个字符生效的情况下，考虑使用花括号囊括全部内容：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs markdown">$ x<span class="hljs-emphasis">_&#123;下标&#125; $</span><br><span class="hljs-emphasis">$ x^&#123;上标&#125; $</span><br><span class="hljs-emphasis">$ x^&#123;上标&#125;_</span>&#123;下标&#125; $<br></code></pre></td></tr></table></figure>
+
+<h3 id="积分和极限"><a href="#积分和极限" class="headerlink" title="积分和极限"></a>积分和极限</h3><p>积分非常简单，直接使用上下标即可指定范围，后续的内容可以直接向后编写，会自动居中摆放：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs markdown">$ \int<span class="hljs-emphasis">_1^2xdx $</span><br></code></pre></td></tr></table></figure>
+
+<p><img src="https://s2.loli.net/2024/04/02/sxD42gbwlKqZzCL.png" srcset="/img/loading.gif" lazyload alt="image-20240402005153195"></p>
+<p>极限与积分类似，同样使用下标即可：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs markdown">$ \lim<span class="hljs-emphasis">_&#123;n\rightarrow+\infty&#125;\frac&#123;1&#125;&#123;n + 1&#125; $</span><br></code></pre></td></tr></table></figure>
+
+<p><img src="https://s2.loli.net/2024/04/02/ctIV1ALQod6gzH7.png" srcset="/img/loading.gif" lazyload alt="image-20240402005402720"></p>
+<h3 id="其他符号"><a href="#其他符号" class="headerlink" title="其他符号"></a>其他符号</h3><p>向量符号：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs markdown">$ \vec&#123;a&#125; $<br></code></pre></td></tr></table></figure>
+
+<p><img src="https://s2.loli.net/2024/04/02/tKwNgFZ2exSqUbp.png" srcset="/img/loading.gif" lazyload alt="image-20240402005634135"></p>
+<p>省略号：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs markdown">$ \cdots $   居中省略号<br>$ \ldots $   靠底部的省略号<br></code></pre></td></tr></table></figure>
+
+<p><img src="https://s2.loli.net/2024/04/02/cfIjWGndLUrh517.png" srcset="/img/loading.gif" lazyload alt="image-20240402005852027"></p>
+<p>点乘号：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs markdown">$ \cdot $<br></code></pre></td></tr></table></figure>
+
+<p><img src="https://s2.loli.net/2024/04/02/ZnJU2rwqSoPbGYf.png" srcset="/img/loading.gif" lazyload alt="image-20240402010021085"></p>
+<p>累加：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs markdown">$ \sum<span class="hljs-emphasis">_1^n $</span><br></code></pre></td></tr></table></figure>
+
+<p><img src="https://s2.loli.net/2024/04/02/RBW6LmgEPhscyaJ.png" srcset="/img/loading.gif" lazyload alt="image-20240402010114211"></p>
+<p>————————————————</p>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/hexo%E7%B3%BB%E7%BB%9F/" class="category-chain-item">hexo系统</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/%E6%93%8D%E4%BD%9C%E6%96%87%E6%A1%A3/" class="print-no-link">#操作文档</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>markdown基本语法</div>
+      <div>https://better-meghi.github.io/2026/03/21/markdown基本语法/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>chimaodeyu</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2026年3月21日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-cc-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2026/03/18/hello-world/" title="Hello World">
+                        <span class="hidden-mobile">Hello World</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    function isExpandAllEnabled() {
+      return CONFIG.toc && CONFIG.toc.expand_all === true;
+    }
+    function expandAllToc() {
+      if (!isExpandAllEnabled()) { return; }
+      jQuery('#toc-body .tocbot-is-collapsed').removeClass('tocbot-is-collapsed');
+    }
+    function updateTocToggle($li, $childList) {
+      var $toggle = $li.children('.toc-toggle');
+      if ($toggle.length === 0) { return; }
+      var collapsed = $childList.hasClass('tocbot-is-collapsed');
+      $toggle
+        .toggleClass('toc-toggle-collapsed', collapsed)
+        .toggleClass('toc-toggle-expanded', !collapsed);
+    }
+    function bindTocToggle() {
+      if (!isExpandAllEnabled()) { return; }
+      jQuery('#toc-body .toc-list-item').each(function() {
+        var $li = jQuery(this);
+        var $childList = $li.children('ol');
+        if ($childList.length === 0) {
+          if ($li.children('.toc-toggle').length === 0) {
+            $li.prepend('<span class="toc-toggle toc-toggle-placeholder" aria-hidden="true">›</span>');
+          }
+          return;
+        }
+
+        if ($li.children('.toc-toggle').length === 0) {
+          $li.prepend('<span class="toc-toggle toc-toggle-expanded" aria-hidden="true">›</span>');
+        }
+        updateTocToggle($li, $childList);
+      });
+      jQuery('#toc-body').off('click.tocToggle').on('click.tocToggle', '.toc-toggle', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        var $li = jQuery(this).parent('.toc-list-item');
+        var $childList = $li.children('ol');
+        if ($childList.length === 0) { return; }
+        $childList.toggleClass('tocbot-is-collapsed');
+        updateTocToggle($li, $childList);
+      });
+      if (!window.__tocToggleObserver) {
+        window.__tocToggleObserver = new MutationObserver(function(mutations) {
+          mutations.forEach(function(mutation) {
+            if (mutation.type !== 'attributes' || mutation.attributeName !== 'class') { return; }
+            var $list = jQuery(mutation.target);
+            var $li = $list.parent('.toc-list-item');
+            if ($li.length === 0) { return; }
+            updateTocToggle($li, $list);
+          });
+        });
+        jQuery('#toc-body ol').each(function() {
+          window.__tocToggleObserver.observe(this, { attributes: true });
+        });
+      }
+    }
+    var tocConfig = Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc);
+    if (isExpandAllEnabled()) {
+      tocConfig.collapseDepth = 6;
+    }
+    window.tocbot.init(tocConfig);
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+    expandAllToc();
+    bindTocToggle();
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+        expandAllToc();
+        bindTocToggle();
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/5.0.0/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>
