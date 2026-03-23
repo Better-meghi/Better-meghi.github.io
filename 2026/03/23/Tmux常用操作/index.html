@@ -19,22 +19,23 @@
   <meta name="author" content="chimaodeyu">
   <meta name="keywords" content="">
   
-    <meta name="description" content="欢迎使用 Hexo！欢迎来到 Hexo 的世界！这是你的第一篇博客文章。如需了解更多使用细节，可查阅 官方文档。如果在使用 Hexo 过程中遇到任何问题，可在 问题排查指南 中寻找答案，或前往 GitHub 仓库 向我们提问。 快速上手创建新文章1$ hexo new &quot;我的新文章&quot; 设置文章格式12345title: Hello Worldcategories:    hex">
+    <meta name="description" content="【效率神器】Tmux常用命令 + 配置详解前言作为一名开发者，你是否遇到过以下场景：  正在服务器上跑一个耗时的脚本（如编译、训练模型），结果网络波动 SSH 断开了，脚本也随之意外终止。 为了同时看日志、敲命令、监控系统资源，不得不开了四五个终端窗口，来回切换极其麻烦。  Tmux (Terminal Multiplexer) 就是为了解决这些问题而生的。它允许你在一个终端窗口中运行多个会话，并">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="https://better-meghi.github.io/2026/03/18/hello-world/index.html">
+<meta property="og:title" content="Tmux常用操作">
+<meta property="og:url" content="https://better-meghi.github.io/2026/03/23/Tmux%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/index.html">
 <meta property="og:site_name" content="Blog">
-<meta property="og:description" content="欢迎使用 Hexo！欢迎来到 Hexo 的世界！这是你的第一篇博客文章。如需了解更多使用细节，可查阅 官方文档。如果在使用 Hexo 过程中遇到任何问题，可在 问题排查指南 中寻找答案，或前往 GitHub 仓库 向我们提问。 快速上手创建新文章1$ hexo new &quot;我的新文章&quot; 设置文章格式12345title: Hello Worldcategories:    hex">
+<meta property="og:description" content="【效率神器】Tmux常用命令 + 配置详解前言作为一名开发者，你是否遇到过以下场景：  正在服务器上跑一个耗时的脚本（如编译、训练模型），结果网络波动 SSH 断开了，脚本也随之意外终止。 为了同时看日志、敲命令、监控系统资源，不得不开了四五个终端窗口，来回切换极其麻烦。  Tmux (Terminal Multiplexer) 就是为了解决这些问题而生的。它允许你在一个终端窗口中运行多个会话，并">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2026-03-18T09:19:07.229Z">
-<meta property="article:modified_time" content="2026-03-23T03:52:30.323Z">
+<meta property="article:published_time" content="2026-03-23T03:53:17.000Z">
+<meta property="article:modified_time" content="2026-03-23T04:00:40.907Z">
 <meta property="article:author" content="chimaodeyu">
+<meta property="article:tag" content="Linux">
 <meta property="article:tag" content="操作文档">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>Hello World - Blog</title>
+  <title>Tmux常用操作 - Blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -329,7 +330,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="Hello World"></span>
+            <span id="subtitle" data-typed-text="Tmux常用操作"></span>
           
         </div>
 
@@ -340,8 +341,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2026-03-18 17:19" pubdate>
-          2026年3月18日 下午
+        <time datetime="2026-03-23 11:53" pubdate>
+          2026年3月23日 中午
         </time>
       </span>
     
@@ -352,7 +353,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          450 字
+          2k 字
         
       </span>
     
@@ -363,7 +364,7 @@
         
         
         
-          4 分钟
+          17 分钟
         
       </span>
     
@@ -402,21 +403,202 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">Hello World</h1>
+            <h1 id="seo-header">Tmux常用操作</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="欢迎使用-Hexo！"><a href="#欢迎使用-Hexo！" class="headerlink" title="欢迎使用 Hexo！"></a>欢迎使用 Hexo！</h1><p>欢迎来到 <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> 的世界！这是你的第一篇博客文章。如需了解更多使用细节，可查阅 <a target="_blank" rel="noopener" href="https://hexo.io/docs/">官方文档</a>。如果在使用 Hexo 过程中遇到任何问题，可在 <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">问题排查指南</a> 中寻找答案，或前往 <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub 仓库</a> 向我们提问。</p>
-<h2 id="快速上手"><a href="#快速上手" class="headerlink" title="快速上手"></a>快速上手</h2><h3 id="创建新文章"><a href="#创建新文章" class="headerlink" title="创建新文章"></a>创建新文章</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;我的新文章&quot;</span><br></code></pre></td></tr></table></figure>
-<h3 id="设置文章格式"><a href="#设置文章格式" class="headerlink" title="设置文章格式"></a>设置文章格式</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs marakdown">title: Hello World<br>categories:<br>    hexo系统<br>tags:<br>    操作文档<br></code></pre></td></tr></table></figure>
-<p>更多详情：<a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">写作指南</a></p>
-<h3 id="启动服务器"><a href="#启动服务器" class="headerlink" title="启动服务器"></a>启动服务器</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure>
-<p>启动后，网站默认运行在 <code>http://localhost:4000</code>，文件修改时会自动更新，无需手动重启。<br>更多详情：<a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">服务器配置</a></p>
-<h3 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure>
-<p>生成的静态文件默认保存在 <code>public</code> 文件夹，支持通过 <code>_config.yml</code> 中的 <code>public_dir</code> 配置自定义输出路径。<br>更多详情：<a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">静态文件生成</a></p>
-<h3 id="部署到远程站点"><a href="#部署到远程站点" class="headerlink" title="部署到远程站点"></a>部署到远程站点</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure>
-<p>部署前需安装对应插件（如 Git 部署需安装 <code>hexo-deployer-git</code>），并在配置文件中设置远程仓库信息。<br>更多详情：<a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">一键部署</a></p>
+                <h1 id="【效率神器】Tmux常用命令-配置详解"><a href="#【效率神器】Tmux常用命令-配置详解" class="headerlink" title="【效率神器】Tmux常用命令 + 配置详解"></a>【效率神器】Tmux常用命令 + 配置详解</h1><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>作为一名开发者，你是否遇到过以下场景：</p>
+<ol>
+<li>正在服务器上跑一个耗时的脚本（如编译、训练模型），结果网络波动 SSH 断开了，脚本也随之意外终止。</li>
+<li>为了同时看日志、敲命令、监控系统资源，不得不开了四五个终端窗口，来回切换极其麻烦。</li>
+</ol>
+<p><strong>Tmux (Terminal Multiplexer)</strong> 就是为了解决这些问题而生的。它允许你在一个终端窗口中运行多个会话，并且支持窗口拆分（分屏）。最重要的是，<strong>它支持“断线重连”</strong>——即使你关闭了终端，Tmux 里的程序依然在后台运行。</p>
+<p>本文将带你快速掌握 Tmux 的核心概念与常用操作。</p>
+<hr>
+<h2 id="1-安装-Tmux"><a href="#1-安装-Tmux" class="headerlink" title="1. 安装 Tmux"></a>1. 安装 Tmux</h2><p>大多数 Linux 发行版和 macOS 都非常容易安装：</p>
+<ul>
+<li><strong>Ubuntu &#x2F; Debian:</strong></li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">sudo</span> apt-get install tmux<br></code></pre></td></tr></table></figure>
+<ul>
+<li><strong>CentOS &#x2F; RHEL:</strong></li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">sudo</span> yum install tmux<br></code></pre></td></tr></table></figure>
+<ul>
+<li><strong>macOS (使用 Homebrew):</strong></li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">brew install tmux<br></code></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="2-核心概念：套娃结构"><a href="#2-核心概念：套娃结构" class="headerlink" title="2. 核心概念：套娃结构"></a>2. 核心概念：套娃结构</h2><p>在使用之前，必须理解 Tmux 的三个层级结构，否则容易晕：</p>
+<ol>
+<li><strong>Session (会话)</strong>：一个连接（就像你打开的一个“任务工作区”）。<strong>关掉终端，Session 不会死。</strong></li>
+<li><strong>Window (窗口)</strong>：一个 Session 可以包含多个 Window（类似于浏览器的标签页）。</li>
+<li><strong>Pane (窗格)</strong>：一个 Window 可以被拆分成多个 Pane（这就是分屏）。</li>
+</ol>
+<hr>
+<h2 id="3-基础操作：会话管理-Session"><a href="#3-基础操作：会话管理-Session" class="headerlink" title="3. 基础操作：会话管理 (Session)"></a>3. 基础操作：会话管理 (Session)</h2><p>这是 Tmux 最主要的功能：保持后台运行。</p>
+<h3 id="3-1-新建会话"><a href="#3-1-新建会话" class="headerlink" title="3.1 新建会话"></a>3.1 新建会话</h3><p>直接输入 <code>tmux</code> 也可以，但建议指定名字，方便以后查找：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">tmux new -s &lt;会话名&gt;<br><span class="hljs-comment"># 示例：创建一个叫 mywork 的会话</span><br>tmux new -s mywork<br></code></pre></td></tr></table></figure>
+
+<h3 id="3-2-离开-挂起会话-Detach"><a href="#3-2-离开-挂起会话-Detach" class="headerlink" title="3.2 离开&#x2F;挂起会话 (Detach)"></a>3.2 离开&#x2F;挂起会话 (Detach)</h3><p><strong>这是最高频的操作！</strong> 当你想离开当前工作去做别的事，或者关闭终端但保留程序运行时：</p>
+<ul>
+<li><strong>快捷键方式：</strong> 按下 <code>Ctrl + b</code>，松手，再按 <code>d</code>。</li>
+<li><strong>结果：</strong> 你会退回到原来的 Shell，提示 <code>[detached]</code>。</li>
+</ul>
+<h3 id="3-3-查看所有会话"><a href="#3-3-查看所有会话" class="headerlink" title="3.3 查看所有会话"></a>3.3 查看所有会话</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">tmux <span class="hljs-built_in">ls</span><br></code></pre></td></tr></table></figure>
+
+<h3 id="3-4-重新进入会话-Attach"><a href="#3-4-重新进入会话-Attach" class="headerlink" title="3.4 重新进入会话 (Attach)"></a>3.4 重新进入会话 (Attach)</h3><p>回到刚才离开的地方：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 默认进入第一个会话</span><br>tmux a  <br><br><span class="hljs-comment"># 进入指定名称的会话（推荐）</span><br>tmux a -t &lt;会话名&gt;<br></code></pre></td></tr></table></figure>
+<p><em>(注：<code>a</code> 是 <code>attach</code> 的简写)</em></p>
+<h3 id="3-5-关闭-销毁会话"><a href="#3-5-关闭-销毁会话" class="headerlink" title="3.5 关闭&#x2F;销毁会话"></a>3.5 关闭&#x2F;销毁会话</h3><p>如果你想彻底结束会话（里面的程序也会被杀掉）：</p>
+<ul>
+<li>在 Tmux 内部输入 <code>exit</code> 或按下 <code>Ctrl + d</code>。</li>
+<li>在 Tmux 外部：</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">tmux kill-session -t &lt;会话名&gt;<br></code></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="4-进阶操作：快捷键大全"><a href="#4-进阶操作：快捷键大全" class="headerlink" title="4. 进阶操作：快捷键大全"></a>4. 进阶操作：快捷键大全</h2><p>⚠️ 重要提示：<br>Tmux 的所有快捷键都需要先按 前缀键 (Prefix Key)。<br>默认的前缀键是 Ctrl + b。<br>(操作方法：先按住 Ctrl 不放按 b，然后松开这两个键，再迅速按功能键)</p>
+<h3 id="4-1-窗格管理-Pane-即“分屏”"><a href="#4-1-窗格管理-Pane-即“分屏”" class="headerlink" title="4.1 窗格管理 (Pane) - 即“分屏”"></a>4.1 窗格管理 (Pane) - 即“分屏”</h3><table>
+<thead>
+<tr>
+<th align="left">快捷键</th>
+<th align="left">功能描述</th>
+<th align="left">记忆技巧</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><code>Ctrl+b</code> <code>%</code></td>
+<td align="left"><strong>左右</strong>分屏</td>
+<td align="left">也就是垂直分割</td>
+</tr>
+<tr>
+<td align="left"><code>Ctrl+b</code> <code>&quot;</code></td>
+<td align="left"><strong>上下</strong>分屏</td>
+<td align="left">也就是水平分割</td>
+</tr>
+<tr>
+<td align="left"><code>Ctrl+b</code> <code>&lt;方向键&gt;</code></td>
+<td align="left">在不同窗格间<strong>切换光标</strong></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><code>Ctrl+b</code> <code>x</code></td>
+<td align="left"><strong>关闭</strong>当前窗格</td>
+<td align="left">会提示确认 (y&#x2F;n)</td>
+</tr>
+<tr>
+<td align="left"><code>Ctrl+b</code> <code>z</code></td>
+<td align="left"><strong>最大化&#x2F;恢复</strong>当前窗格</td>
+<td align="left">Zoom (再次按下恢复)</td>
+</tr>
+<tr>
+<td align="left"><code>Ctrl+b</code> <code>{</code> 或 <code>}</code></td>
+<td align="left">左右交换窗格位置</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><code>Ctrl+b</code> <code>空格</code></td>
+<td align="left">切换预设的排版布局</td>
+<td align="left"></td>
+</tr>
+</tbody></table>
+<h3 id="4-2-窗口管理-Window-即“标签页”"><a href="#4-2-窗口管理-Window-即“标签页”" class="headerlink" title="4.2 窗口管理 (Window) - 即“标签页”"></a>4.2 窗口管理 (Window) - 即“标签页”</h3><table>
+<thead>
+<tr>
+<th align="left">快捷键</th>
+<th align="left">功能描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><code>Ctrl+b</code> <code>c</code></td>
+<td align="left"><strong>创建</strong>一个新窗口 (Create)</td>
+</tr>
+<tr>
+<td align="left"><code>Ctrl+b</code> <code>w</code></td>
+<td align="left"><strong>列表展示</strong>所有窗口 (可视化的选择界面)</td>
+</tr>
+<tr>
+<td align="left"><code>Ctrl+b</code> <code>n</code></td>
+<td align="left">切换到<strong>下</strong>一个窗口 (Next)</td>
+</tr>
+<tr>
+<td align="left"><code>Ctrl+b</code> <code>p</code></td>
+<td align="left">切换到<strong>上</strong>一个窗口 (Previous)</td>
+</tr>
+<tr>
+<td align="left"><code>Ctrl+b</code> <code>0-9</code></td>
+<td align="left">直接切换到指定编号的窗口</td>
+</tr>
+<tr>
+<td align="left"><code>Ctrl+b</code> <code>,</code></td>
+<td align="left"><strong>重命名</strong>当前窗口 (方便记忆)</td>
+</tr>
+</tbody></table>
+<h3 id="4-3-翻页与查看历史-Scroll"><a href="#4-3-翻页与查看历史-Scroll" class="headerlink" title="4.3 翻页与查看历史 (Scroll)"></a>4.3 翻页与查看历史 (Scroll)</h3><p>在 Tmux 中，直接用鼠标滚轮往往是没用的（除非配置了鼠标模式）。</p>
+<ul>
+<li><strong>进入翻页模式：</strong> 按 <code>Ctrl+b</code> <code>[</code></li>
+<li><strong>操作：</strong> 使用方向键、<code>PgUp</code>、<code>PgDn</code> 进行翻页查看历史输出。</li>
+<li><strong>退出模式：</strong> 按 <code>q</code>。</li>
+</ul>
+<hr>
+<h2 id="5-提升幸福感：开启鼠标支持"><a href="#5-提升幸福感：开启鼠标支持" class="headerlink" title="5. 提升幸福感：开启鼠标支持"></a>5. 提升幸福感：开启鼠标支持</h2><p>默认情况下 Tmux 无法用鼠标点击切换窗口或调整分屏大小，这对新手很不友好。我们可以通过配置文件开启鼠标支持。</p>
+<ol>
+<li>在用户目录下新建或编辑配置文件：</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">vim ~/.tmux.conf<br></code></pre></td></tr></table></figure>
+<ol start="2">
+<li>加入以下内容（针对 Tmux 2.1 及以上版本）：</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">set</span> -g mouse on<br></code></pre></td></tr></table></figure>
+<ol start="3">
+<li>让配置生效：<ul>
+<li>在 Tmux 内部：按 <code>Ctrl+b</code> <code>:</code>，输入 <code>source-file ~/.tmux.conf</code></li>
+<li>或者彻底杀掉 Tmux 服务再重启。</li>
+</ul>
+</li>
+</ol>
+<p><strong>开启后你就可以：</strong></p>
+<ul>
+<li>用鼠标点击选择窗格。</li>
+<li>用鼠标拖动窗格边缘调整大小。</li>
+<li>用鼠标滚轮查看历史记录。</li>
+</ul>
+<hr>
+<h2 id="6-总结速查表"><a href="#6-总结速查表" class="headerlink" title="6. 总结速查表"></a>6. 总结速查表</h2><table>
+<thead>
+<tr>
+<th align="left">场景</th>
+<th align="left">命令&#x2F;操作</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><strong>我要去吃饭了，但程序不能停</strong></td>
+<td align="left"><code>Ctrl+b</code> <code>d</code></td>
+</tr>
+<tr>
+<td align="left"><strong>我回来了，我要继续工作</strong></td>
+<td align="left"><code>tmux a -t &lt;名字&gt;</code></td>
+</tr>
+<tr>
+<td align="left"><strong>我想一边看日志一边敲命令</strong></td>
+<td align="left"><code>Ctrl+b</code> <code>%</code> (左右分)</td>
+</tr>
+<tr>
+<td align="left"><strong>屏幕太小了，我想把这个窗格全屏看</strong></td>
+<td align="left"><code>Ctrl+b</code> <code>z</code></td>
+</tr>
+<tr>
+<td align="left"><strong>窗口名字叫 bash 太丑了</strong></td>
+<td align="left"><code>Ctrl+b</code> <code>,</code> (改名)</td>
+</tr>
+<tr>
+<td align="left"><strong>我想看刚才滚过去的日志</strong></td>
+<td align="left"><code>Ctrl+b</code> <code>[</code> (按 q 退出)</td>
+</tr>
+</tbody></table>
 
                 
               </div>
@@ -452,6 +634,8 @@
       
         <a href="/tags/%E6%93%8D%E4%BD%9C%E6%96%87%E6%A1%A3/" class="print-no-link">#操作文档</a>
       
+        <a href="/tags/Linux/" class="print-no-link">#Linux</a>
+      
     </div>
   
 </div>
@@ -462,8 +646,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>Hello World</div>
-      <div>https://better-meghi.github.io/2026/03/18/hello-world/</div>
+      <div>Tmux常用操作</div>
+      <div>https://better-meghi.github.io/2026/03/23/Tmux常用操作/</div>
     </div>
     <div class="license-meta">
       
@@ -475,7 +659,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2026年3月18日</div>
+          <div>2026年3月23日</div>
         </div>
       
       
@@ -507,15 +691,15 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2026/03/21/markdown%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/" title="markdown语法详解">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">markdown语法详解</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
+                    
+                      <a href="/2026/03/21/01-%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E4%B8%8E%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/" title="01. 软件安装与环境配置">
+                        <span class="hidden-mobile">01. 软件安装与环境配置</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
                     
                   </article>
                 </div>
